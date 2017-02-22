@@ -103,7 +103,6 @@
 
     self.loadingSpinner.hidden = NO;
     [self.refreshControl beginRefreshing];
-    [self refreshControlTriggered:self.refreshControl];
 
     if (adjustScrollOffset) {
         [self.scrollView setContentOffset:CGPointMake(0, -self.scrollView.contentInset.top) animated:YES];
